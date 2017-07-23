@@ -1,0 +1,311 @@
+
+/*Header gelbes Feld auf allen Seiten*/
+.header{
+background-color: yellow;
+width: 550px;
+height: 200px;
+margin: auto;
+margin-top: 50px;
+}
+
+/*Titel|Eine Seite des Kommunikationsdesign*/
+.main{
+font-family: 'Courier New', Courier mono, sans-serif;
+line-height: 16px;
+font-size: 14px;
+background: #fff;
+top: 6em;
+position: relative;
+padding: 1.5em;
+display: inline-block;
+}
+
+*{
+margin:0;
+padding:0;
+border:0;
+}
+
+body{
+font-family: 'Courier New', Courier mono, sans-serif;
+font-size: 90%;
+width: 100%;
+height: 100%;
+margin: 8px
+}
+
+/*h1 im lebenslauf für hauptüberschriften verwendet*/
+h1{
+font-size: 1em;
+line-height: 1.5em;
+text-align: center;
+padding: 0;
+margin-bottom: 0;
+font-family: "Didot", Times, serif;
+font-size: 29pt;
+text-align: right;
+text-decoration: none;
+font-weight: lighter;
+text-transform: uppercase;
+}
+
+/*h2 im lebenslauf für Zeitangaben verwendet*/
+h2{
+  font-family: "Courier New";
+  font-size: 9pt;
+  text-decoration: none;
+}
+
+p{
+line-height: 1.5em;
+font-size: 1em;
+}
+
+.wrapper{
+width: 100%;
+margin: 6em auto;
+position: relative;
+padding-top: 10em;
+padding-bottom: 5em;
+}
+
+/*Navigation*/
+nav{
+width: 960px;
+}
+
+nav ul{
+padding: 0;
+margin: 0;
+font-family: 'Courier New', Courier, mono; sans-serif;
+font-size: 11px;
+text-transform: uppercase;
+position: relative;
+top: 8em;
+left: 11em;
+}
+
+nav ul:after{
+clear: both;
+content: '';
+display: block;
+font-size: 0;
+height: 0;
+visibility: hidden;
+}
+
+nav ul, nav ul li{
+background-color: none;
+}
+
+nav ul li{
+list-style: none;
+float: left;
+}
+
+nav ul li a{
+text-decoration: none;
+display: block;
+color: #333;
+padding: 4px 4px 4px 5px;
+}
+
+nav ul li:hover > ul{ /*um Dropdown Menü auf sichtbare Ebene zu legen*/
+visibility: visible;
+z-index: 4;
+}
+
+nav ul li ul{
+display: inline;
+visibility: hidden;
+position: absolute;
+padding: 0;
+margin-left: 45px;
+font-family: 'Courier New', Courier, mono; sans-serif;
+font-size: 10px;
+top: 0;
+text-transform: none;
+padding-top: 50px;
+left: 10px;
+}
+
+a:hover,
+a:focus,
+a:visited{/*Style aller Links*/
+color: black;
+font-weight: bold;
+outline: none;
+}
+
+nav ul li ul li{
+float: none;
+}
+
+nav ul li ul li a:hover{/*Links der 2.Ebene der Navigation*/
+color: #333;
+background-color: #FAFA !important;
+text-transform: uppercase;
+}
+/*Ende Navigation*/
+
+#wrapper{
+width: 720px;
+margin-top: 10px;
+margin-right: auto;
+margin-bottom: 10px;
+margin-left: auto;
+}
+
+/*Kontaktformular*/
+@media screen {/*Gesamt Form|optimiert für Screenansicht*/
+form {
+background-color: white;
+font-family:'Courier New', Courier, mono; sans-serif;
+font-size: 11px;
+width: 320px;
+padding: 1em;
+margin: auto;
+margin-top: 200px;
+margin-left: 0px;
+line-height: 1em;
+}}
+
+form > div{
+margin-bottom: 1em;
+}
+
+label{/* Abstand von Ihr Name & Kasten zum nächsten Ihre E-mail-Adresse & Kasten usw.*/
+display: block;
+cursor: pointer;
+margin-bottom: 0.25em;
+}
+
+input,
+textarea { /*Eingabefelder 1 und 2 als auch beide Buttons*/
+font-family:'Courier New', Courier, mono; sans-serif;
+width: 280px;
+padding: 0.25em;
+margin-bottom: 1em;
+background-color: white;
+border-style: solid;
+border-width: thin;
+border-color: gray;
+}
+
+input[type='submit']{ /*Abschicken Button*/
+background: white;
+border-style: solid;
+border-width: thin;
+width: 100px;
+text-align: center;
+}
+
+input[type='reset']{ /*Abbrechen Button*/
+background: white;
+border-style: solid;
+border-width: thin;
+width: 100px;
+}
+
+textarea{ /*Textfeld bei Ihre Nachricht*/
+max-width: 100%;
+min-height: 7em;
+border-style: solid;
+border-width: thin;
+border-color: gray;
+}
+
+input: focus;
+textarea: focus {/*findet ein aktives Input-Feld. Pseudoklasse :focus entdeckt, ob ein Feld aktiviert wurde – entweder durch einen Klick mit der Maus in das Feld oder durch eine Navigation mit dem Tabulator der Tastatur.*/
+background-color: #ffeda0;
+}
+/*Ende Kontaktformular*/
+
+.container {
+  width: 68%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+}
+
+
+div {
+  /* Sorgt dafür, dass der Abstand 'padding' nicht auf die Breite einer Box aufaddiert wird – der Innenabstand padding wird somit inkludiert. */
+  box-sizing: border-box;
+}
+.wrapper{
+width: 100%;
+}
+
+.box1{
+float: left;
+  /* Standard bei div-Elementen */
+  width: 600px;
+  height: 450px;
+  background-color: none;
+  /* Das Element wird zentriert */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  /*Innenabstand */
+  padding: 80px;
+  /*d0px dicke, durchgezogene Linie*/
+  border: 0px solid #000;
+}
+.box2 {
+  /* Standard bei div-Elementen */
+float: right;
+  width: 800px;
+  height: 1000px;
+  background-color: none;
+  /* Das Element wird zentriert */
+  margin-left: auto;
+  margin-right: 80px;
+  /* Innenabstand */
+  padding: 80px;
+  /* 0px dicke, durchgezogene Linie*/
+  border: 0px solid #000;
+}
+.box3 {
+  /* Standard bei div-Elementen */
+float: left;
+  width: 600px;
+  height: 1000px;
+  background-color: none;
+  /* Das Element wird zentriert */
+  margin-left: auto;
+  margin-right: 280px;
+  /* Innenabstand */
+  padding: 80px;
+  /* 0px dicke, durchgezogene Linie*/
+  border: 0px solid #000;
+}
+.box4 {
+  /* Standard bei div-Elementen */
+float: auto;
+  width: 600px;
+  height: 1000px;
+  background-color: none;
+  /* Das Element wird zentriert */
+  margin-left: auto;
+  margin-right: auto;
+  /* Innenabstand */
+  padding: 80px;
+  /* 0px dicke, durchgezogene Linie*/
+  border: 7px solid red;
+}
+
+.Plakat{
+  text-align: center;
+  margin-top: 200px;
+}
+
+.Plugin{
+  text-align: center;
+  margin-top: 200px;
+}
+
+.EesB{
+  margin: 50px;
+  display: inline-block;
+}
